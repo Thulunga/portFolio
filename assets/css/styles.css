@@ -150,7 +150,6 @@ img {
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
     padding: 2rem 0 4rem;
-
 }
 
 .section__title {
@@ -876,6 +875,19 @@ img {
 .testimonial__icon-star {
     color: var(--first-color)
 }
+
+.swiper-container{
+    max-width: 1000px;
+}
+.swiper-wrapper {
+}
+/* .testimonial{
+    overflow: inherit;
+}
+
+.testimonial__container{
+    overflow: inherit;
+} */
 
 .swiper-container .swiper-pagination-testimonial {
     bottom: 0
