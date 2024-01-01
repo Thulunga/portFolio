@@ -841,6 +841,9 @@ img {
 }
 
 /*==================== TESTIMONIAL ====================*/
+.testimonial__content {
+    padding: 0 20px 0 20px;
+}
 .testimonial__data,
 .testimonial__header {
     display: flex;
