@@ -842,7 +842,10 @@ img {
 
 /*==================== TESTIMONIAL ====================*/
 .testimonial__content {
-    padding: 0 20px 0 20px;
+    padding: 10px 10px 0 10px;
+    background-color: var(--container-color);
+    margin-bottom: -20px;
+    border-radius: 10px;
 }
 .testimonial__data,
 .testimonial__header {
