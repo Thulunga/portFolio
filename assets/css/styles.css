@@ -1364,6 +1364,10 @@ img {
         width: 460px;
     }
 
+    .contact__description{
+        margin-top: 1rem;
+    }
+
     .contact__inputs {
         grid-template-columns: repeat(2, 1fr);
     }
