@@ -5,6 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Thulunga Basumatary - Software Developer with expertise in Angular, JavaScript, and web development. Explore my portfolio, projects, and resume.">
+    <meta name="keywords"
+        content="Thulunga Basumatary, Software Developer, Web Developer, Angular Developer, JavaScript, Portfolio, Resume">
+    <meta name="author" content="Thulunga Basumatary">
+
+    <!-- Open Graph (OG) Meta Tags for Social Media -->
+    <!-- <meta property="og:title" content="Thulunga Basumatary - Software Developer">
+    <meta property="og:description" content="Experienced Software Developer skilled in Angular, JavaScript, and front-end development. Check out my projects and resume.">
+    <meta property="og:image" content="https://yourwebsite.com/assets/images/portfolio-thumbnail.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website"> -->
+
+    <!-- Twitter Card Metadata -->
+    <!-- <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Thulunga Basumatary - Software Developer">
+    <meta name="twitter:description" content="Experienced Angular Developer with expertise in JavaScript and web development. Explore my portfolio.">
+    <meta name="twitter:image" content="https://yourwebsite.com/assets/images/portfolio-thumbnail.jpg"> -->
+
+    <!-- Schema Markup for Search Engines -->
+    <!-- update the link here later -> https://thulunga.vercel.app/-->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Thulunga Basumatary",
+        "jobTitle": "Software Developer",
+        "url": "https://thulunga.vercel.app/",
+        "sameAs": [
+            "https://www.linkedin.com/in/thulunga",
+            "hhttps://github.com/Thulunga"
+        ]
+    }
+    </script>
+
     <!--==================== UNICONS ====================-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
@@ -14,8 +50,9 @@
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title></title>
+    <title>Thulunga Basumatary - Software Developer | Portfolio & Resume</title>
 </head>
+
 
 <body>
     <!--==================== HEADER ====================-->
@@ -38,6 +75,11 @@
                     <li class="nav__item">
                         <a href="#skills" class="nav__link">
                             <i class="uil uil-file-alt nav__icon"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i>Experience
                         </a>
                     </li>
                     <li class="nav__item">
@@ -80,19 +122,19 @@
         <section class="home section" id="home">
             <div class="home__container container grid">
                 <div class="home__content grid">
+                    <!-- Social Links -->
                     <div class="home__social">
-                        <a href="https://www.linkedin.com/in/thulunga--inspire/" target="_blank"
-                            class="home__social-icon">
+                        <a href="https://www.linkedin.com/in/thulunga/" target="_blank" rel="noopener noreferrer"
+                            class="home__social-icon" aria-label="LinkedIn">
                             <i class="uil uil-linkedin-alt"></i>
                         </a>
-                        <!-- <a href="http://dribble.com" target="_blank" class="home__social-icon">
-                            <i class="uil uil-dribbble"></i>
-                        </a> -->
-                        <a href="https://github.com/Thulunga" target="_blank" class="home__social-icon">
+                        <a href="https://github.com/Thulunga" target="_blank" rel="noopener noreferrer"
+                            class="home__social-icon" aria-label="GitHub">
                             <i class="uil uil-github-alt"></i>
                         </a>
                     </div>
 
+                    <!-- Profile Image -->
                     <div class="home__img">
                         <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -107,71 +149,86 @@
                                     165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                                <image class="home__blob-img" x="12" y="18" xlink:href="assets/img/perfil.png" />
+                                <image class="home__blob-img" x="12" y="18" xlink:href="assets/img/perfil.png"
+                                    alt="Profile picture of Thulunga Basumatary" />
                             </g>
                         </svg>
                     </div>
 
+                    <!-- Home Data -->
                     <div class="home__data">
-                        <h2 class="home__title">Hi, I'm Thulunga Basumatary</h2>
-                        <h3 class="home__subtitle">Full Stack developer (SDE at SOTI)</h3>
-                        <p class="home__description">High level experience in web design and development knowledge,
-                            producing quality work.</p>
+                        <h1 class="home__title">Hi, I'm Thulunga Basumatary</h1>
+                        <h2 class="home__subtitle">Full Stack Developer | Angular | JavaScript</h2>
+                        <p class="home__description">
+                            Passionate Software Developer with expertise in <strong>Angular, JavaScript, and Full Stack
+                                Development</strong>.
+                            Crafting scalable web applications with high-performance UI.
+                        </p>
                         <a href="#contact" class="button button-flex">
-                            Contact Me <i class="uil uil-message button__icon"></i>
+                            Let's Connect <i class="uil uil-message button__icon"></i>
                         </a>
                     </div>
                 </div>
+
+                <!-- Scroll Down Button -->
                 <div class="home__scroll">
-                    <a href="#about" class="home__scroll-button button--flex">
+                    <a href="#about" class="home__scroll-button button--flex" aria-label="Scroll down to About section">
                         <i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>
-                        <span class="home__scroll-name">Scroll down</span>
+                        <span class="home__scroll-name">Scroll Down</span>
                         <i class="uil uil-arrow-down home__scroll-arrow"></i>
                     </a>
                 </div>
             </div>
         </section>
 
+
         <!--==================== ABOUT ====================-->
         <section class="about section" id="about">
             <h2 class="section__title">About Me</h2>
-            <span class="section__subtitle">My introduction</span>
+            <span class="section__subtitle">Who I Am</span>
 
             <div class="about__container container grid">
-                <img src="assets/img/about.jpg" alt="" class="about__img">
+                <!-- Profile Image -->
+                <img src="assets/img/about.jpg" alt="Thulunga Basumatary - Software Developer" class="about__img">
 
                 <div class="about__data">
-                    <p class="about__description">Web developer, with extensive knowledge
-                        and years of experience, working in web technologies and
-                        Ui / Ux design, delivering quality work.
+                    <p class="about__description">
+                        I am a <strong>Full Stack Developer</strong> with <strong>expertise in Angular, JavaScript, and
+                            UI/UX design</strong>.
+                        With <strong>3+ years</strong> of experience in web development, I build high-quality, scalable
+                        applications that enhance user experiences.
                     </p>
 
+                    <!-- Experience & Achievements -->
                     <div class="about__info">
                         <div>
-                            <span class="about__info-title">02+</span>
-                            <span class="about__info-name">Years of <br> experience</span>
+                            <span class="about__info-title">3+</span>
+                            <span class="about__info-name">Years of <br> Experience</span>
                         </div>
 
                         <div>
                             <span class="about__info-title">20+</span>
-                            <span class="about__info-name">Completed <br> projects</span>
+                            <span class="about__info-name">Completed <br> Projects</span>
                         </div>
 
                         <div>
                             <span class="about__info-title">1</span>
-                            <span class="about__info-name">Companies <br> working</span>
+                            <span class="about__info-name">Company <br> Worked At</span>
                         </div>
                     </div>
 
+                    <!-- Resume Download Button -->
                     <div class="about__buttons">
-                        <a download="" href="assets/pdf/Thulunga_Resume.pdf" class="button button--flex">
-                            Download CV<i class="uil uil-download-alt button__icon"></i>
+                        <a href="assets/pdf/Thulunga_Resume.pdf" download="Thulunga_Basumatary_Resume.pdf"
+                            class="button button--flex">
+                            Download My Resume <i class="uil uil-download-alt button__icon"></i>
                         </a>
                     </div>
                 </div>
             </div>
-
         </section>
+
+
 
         <!--==================== SKILLS ====================-->
         <section class="skills section" id="skills">
@@ -288,47 +345,40 @@
                                 <div class="skills__bar">
                                     <div class="skills__percentage skills__node"></div>
                                 </div>
-
                             </div>
-
-
                         </div>
                     </div>
                 </div>
             </div>
 
-
-            </div>
-            </div>
-
         </section>
 
         <!--==================== QUALIFICATION ====================-->
-        <section class="qualification__section">
-            <h2 class="section__title">Qualification</h2>
-            <span class="section__subtitle">My personal journey</span>
+        <section class="qualification__section" id="experience">
+            <h2 class="section__title">Qualification & Experience</h2>
+            <span class="section__subtitle">My Professional Journey</span>
 
             <div class="qualification__container container">
                 <div class="qualification__tabs">
-                    <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                    <div class="qualification__button button--flex" data-target='#education'>
                         <i class="uil uil-graduation-cap qualification__icon"></i>
                         Education
                     </div>
 
-                    <div class="qualification__button button--flex" data-target="#work">
+                    <div class="qualification__button button--flex qualification__active" data-target="#work">
                         <i class="uil uil-briefcase-alt qualification__icon"></i>
-                        Work
+                        Work Experience
                     </div>
                 </div>
 
                 <div class="qualification__sections">
                     <!--==================== QUALIFICATION CONTENT 1 ====================-->
-                    <div class="qualification__content qualification__active" data-content id="education">
+                    <div class="qualification__content" data-content id="education">
                         <!--==================== QUALIFICATION 1 ====================-->
                         <div class="qualification__data">
                             <div>
-                                <h3 class="qualification__title">Class 10</h3>
-                                <span class="qualification__subtitle">Jawahar Navodaya Vidyalaya Baksa, Assam</span>
+                                <h3 class="qualification__title">Class 6 - 10</h3>
+                                <span class="qualification__subtitle">Jawahar Navodaya Vidyalaya, Baksa, Assam</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
                                     2010 - 2015
@@ -362,8 +412,9 @@
                         <!--==================== QUALIFICATION 3 ====================-->
                         <div class="qualification__data">
                             <div>
-                                <h3 class="qualification__title">B Tech in Computer Science and Enginnering</h3>
-                                <span class="qualification__subtitle">NIT Calicut</span>
+                                <h3 class="qualification__title">B.Tech in Computer Science & Engineering</h3>
+                                <span class="qualification__subtitle">National Institute of Technology (NIT),
+                                    Calicut</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
                                     2017 - 2022
@@ -389,24 +440,22 @@
                                 <span class="qualification__subtitle">Xebia Academy</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                    August 2022 - October 2022
+                                    Aug 2022 - Oct 2022
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
 
                     <!--==================== QUALIFICATION CONTENT 2 ====================-->
-                    <div class="qualification__content" data-content id="work">
+                    <div class="qualification__content qualification__active" data-content id="work">
                         <!--==================== QUALIFICATION 1 ====================-->
                         <div class="qualification__data">
                             <div>
                                 <h3 class="qualification__title">Associate Software Developer</h3>
-                                <span class="qualification__subtitle">SOTI Inc. Gurgaon, India</span>
+                                <span class="qualification__subtitle">SOTI Inc., Gurgaon, India</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                    August 2022 - July 2024
+                                    Aug 2022 - Jul 2024
                                 </div>
                             </div>
 
@@ -426,43 +475,24 @@
 
                             <div>
                                 <h3 class="qualification__title">Software Developer 1</h3>
-                                <span class="qualification__subtitle">SOTI Inc. Gurgaon, India</span>
+                                <span class="qualification__subtitle">SOTI Inc., Gurgaon, India</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
-                                    August 2024 - Present
+                                    Aug 2024 - Present
                                 </div>
                             </div>
                         </div>
-
-                        <!--==================== QUALIFICATION 3 ====================-->
-                        <!-- <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">UI Designer</h3>
-                                <span class="qualification__subtitle">Figma - Spain</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2017 - 2019
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div> -->
                         <br><br>
-                        <br>
-
                     </div>
-
                 </div>
             </div>
         </section>
 
+
         <!--==================== SERVICES ====================-->
         <section class="services section" id="services">
             <h2 class="section__title">Services</h2>
-            <span class="section__subtitle">What I offer</span>
+            <span class="section__subtitle">What I Offer</span>
 
             <div class="services__container container grid">
                 <!--==================== SERVICES 1 ====================-->
@@ -484,22 +514,22 @@
                             <ul class="services__modal-services grid">
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I develop the user interface.</p>
+                                    <p>Designing intuitive and engaging user interfaces.</p>
                                 </li>
 
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Webpage development.</p>
+                                    <p>Creating responsive and visually appealing web pages.</p>
                                 </li>
 
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I create Ux element interactions.</p>
+                                    <p>Developing seamless UX interactions for better usability.</p>
                                 </li>
 
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I position your company brand.</p>
+                                    <p>Enhancing brand identity through effective UI strategies.</p>
                                 </li>
                             </ul>
                         </div>
@@ -525,22 +555,22 @@
                             <ul class="services__modal-services grid">
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I develop the user interface.</p>
+                                    <p>Building dynamic and interactive user interfaces.</p>
                                 </li>
 
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Webpage development with creative UI</p>
+                                    <p>Developing web pages with modern UI frameworks.</p>
                                 </li>
 
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I create Ux element interactions that makes user easy to understand</p>
+                                    <p>Creating smooth UX interactions for an intuitive experience.</p>
                                 </li>
 
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Creative design with web 3.0</p>
+                                    <p>Integrating creative designs with Web 3.0 technologies.</p>
                                 </li>
                             </ul>
                         </div>
@@ -550,7 +580,7 @@
                 <!--==================== SERVICES 3 ====================-->
                 <div class="services__content">
                     <div>
-                        <i class="uil uil-pen services__icon"></i>
+                        <i class="uil uil-palette services__icon"></i>
                         <h3 class="services__title">Branding <br> Designer</h3>
                     </div>
                     <span class="button button--flex button--small button--link services__button">
@@ -566,22 +596,22 @@
                             <ul class="services__modal-services grid">
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I develop the user interface.</p>
+                                    <p>Crafting a strong and unique brand identity.</p>
                                 </li>
 
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Webpage development.</p>
+                                    <p>Designing logos, marketing materials, and digital assets.</p>
                                 </li>
 
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I create Ux element interactions.</p>
+                                    <p>Developing brand positioning strategies.</p>
                                 </li>
 
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I position your company brand.</p>
+                                    <p>Creating visually appealing and memorable designs.</p>
                                 </li>
                             </ul>
                         </div>
@@ -669,30 +699,35 @@
 
         <!--==================== PROJECT IN MIND ====================-->
         <section class="project section">
-
             <div class="project__bg">
                 <div class="project__container container grid">
                     <div class="project__data">
-                        <h2 class="project__title">Contact me to hire.</h2>
-                        <p class="project__description">you have a new project? Contact me now and get 30% discount on
-                            your project.</p>
-                        <a href="#contact" class="button button--flex button--white">Contact me</a>
-                        <i class="uil uil-message project__icon button__icon"></i>
+                        <h2 class="project__title">Open to New Opportunities!</h2>
+                        <p class="project__description">
+                            Seeking a dedicated and skilled software developer? Let's connect to explore potential
+                            opportunities.
+                            <br><br>
+                            <span class="secondary-text">Also available for select freelance projects.</span>
+                        </p>
+                        <a href="#contact" class="button button--flex button--white">
+                            Get in Touch
+                            <i class="uil uil-envelope project__icon button__icon"></i>
+                        </a>
                     </div>
 
-                    <img src="assets/img/project.png" alt="" class="project__img">
+                    <img src="assets/img/project.png" alt="Professional opportunity" class="project__img">
                 </div>
             </div>
-
         </section>
+
 
         <!--==================== TESTIMONIAL ====================-->
 
 
         <section class="testimonial section">
 
-            <h2 class="section__title">Accolades</h2>
-            <span class="section__subtitle">Professional Acknowledgments</span>
+            <h2 class="section__title">Accolades & Recognitions</h2>
+            <span class="section__subtitle">What Professionals Say</span>
 
             <div class="testimonial__container swiper-container">
                 <div class="swiper-wrapper">
@@ -703,7 +738,8 @@
                     <div class="testimonial__content swiper-slide">
                         <div class="testimonial__data">
                             <div class="testimonial__header">
-                                <img src="assets/img/testimonial0.jpg" alt="" class="testimonial__img">
+                                <img src="assets/img/testimonial0.jpg" alt="Saptarshi Chakraborty"
+                                    class="testimonial__img">
 
                                 <div>
                                     <h3 class="testimonial__name">Saptarshi Chakraborty</h3>
@@ -731,7 +767,7 @@
                     <div class="testimonial__content swiper-slide">
                         <div class="testimonial__data">
                             <div class="testimonial__header">
-                                <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__img">
+                                <img src="assets/img/testimonial1.jpg" alt="Vishal Hasnani" class="testimonial__img">
 
                                 <div>
                                     <h3 class="testimonial__name">Vishal Hasnani</h3>
@@ -761,7 +797,7 @@
                     <div class="testimonial__content swiper-slide">
                         <div class="testimonial__data">
                             <div class="testimonial__header">
-                                <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__img">
+                                <img src="assets/img/testimonial2.jpg" alt="Siddharth Rai" class="testimonial__img">
 
                                 <div>
                                     <h3 class="testimonial__name">Siddharth Rai</h3>
@@ -792,7 +828,7 @@
                     <div class="testimonial__content swiper-slide">
                         <div class="testimonial__data">
                             <div class="testimonial__header">
-                                <img src="assets/img/testimonial3.jpg" alt="" class="testimonial__img">
+                                <img src="assets/img/testimonial3.jpg" alt="Aman Deep" class="testimonial__img">
 
                                 <div>
                                     <h3 class="testimonial__name">Aman Deep</h3>
@@ -822,7 +858,7 @@
                     <div class="testimonial__content swiper-slide">
                         <div class="testimonial__data">
                             <div class="testimonial__header">
-                                <img src="assets/img/testimonial4.jpg" alt="" class="testimonial__img">
+                                <img src="assets/img/testimonial4.jpg" alt="Hritik Upreti" class="testimonial__img">
 
                                 <div>
                                     <h3 class="testimonial__name">Hritik Upreti</h3>
@@ -851,7 +887,7 @@
                     <div class="testimonial__content swiper-slide">
                         <div class="testimonial__data">
                             <div class="testimonial__header">
-                                <img src="assets/img/testimonial5.jpg" alt="" class="testimonial__img">
+                                <img src="assets/img/testimonial5.jpg" alt="Hari Om Pandey" class="testimonial__img">
 
                                 <div>
                                     <h3 class="testimonial__name">Hari Om Pandey</h3>
@@ -879,7 +915,7 @@
                     <div class="testimonial__content swiper-slide">
                         <div class="testimonial__data">
                             <div class="testimonial__header">
-                                <img src="assets/img/testimonial6.jpg" alt="" class="testimonial__img">
+                                <img src="assets/img/testimonial6.jpg" alt="Ankit Sharma" class="testimonial__img">
 
                                 <div>
                                     <h3 class="testimonial__name">Ankit Sharma</h3>
@@ -910,7 +946,7 @@
                     <div class="testimonial__content swiper-slide">
                         <div class="testimonial__data">
                             <div class="testimonial__header">
-                                <img src="assets/img/testimonial7.jpg" alt="" class="testimonial__img">
+                                <img src="assets/img/testimonial7.jpg" alt="Sinadin Shibin" class="testimonial__img">
 
                                 <div>
                                     <h3 class="testimonial__name">Sinadin Shibin</h3>
@@ -936,7 +972,7 @@
                     <div class="testimonial__content swiper-slide">
                         <div class="testimonial__data">
                             <div class="testimonial__header">
-                                <img src="assets/img/testimonial8.jpg" alt="" class="testimonial__img">
+                                <img src="assets/img/testimonial8.jpg" alt="Rishi Suresh" class="testimonial__img">
 
                                 <div>
                                     <h3 class="testimonial__name">Rishi Suresh</h3>
@@ -958,10 +994,6 @@
                             addressing their tasks and doubts with enthusiasm and expertise. His tireless work ethic
                             makes him an invaluable asset to our team.</p>
                     </div>
-
-
-
-
                 </div>
 
                 <!-- Add pagination -->
@@ -971,47 +1003,43 @@
 
         <!--==================== CONTACT ME ====================-->
         <section class="contact section" id="contact">
-            <h2 class="section__title">Contact me</h2>
-            <span class="section__subtitle">Get in touch</span>
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Reach out for job opportunities and collaborations</span>
 
             <div class="contact__container container grid">
                 <div>
                     <div class="contact__information">
                         <i class="uil uil-phone-alt contact__icon"></i>
-
-
                         <a href="tel:+918638113906">
                             <div>
-                                <h3 class="contact__title">Call me</h3>
-                                <span class="contatc__subtitle">(+91) 8638113906</span>
+                                <h3 class="contact__title">Call Me</h3>
+                                <span class="contact__subtitle">(+91) 8638113906</span>
                             </div>
                         </a>
                     </div>
 
                     <div class="contact__information">
                         <i class="uil uil-envelope contact__icon"></i>
-
                         <a href="mailto:thulunga.tb@gmail.com">
                             <div>
                                 <h3 class="contact__title">E-mail</h3>
-                                <span class="contatc__subtitle">thulunga.tb@gmail.com</span>
+                                <span class="contact__subtitle">thulunga.tb@gmail.com</span>
                             </div>
                         </a>
                     </div>
 
                     <div class="contact__information">
                         <i class="uil uil-map-marker contact__icon"></i>
-
                         <div>
                             <h3 class="contact__title">Location</h3>
-                            <span class="contatc__subtitle">Gurgaon, Delhi NCR, Hariyana</span>
+                            <span class="contact__subtitle">Gurgaon, Delhi NCR, Haryana</span>
                         </div>
                     </div>
                 </div>
 
                 <form action="" class="contact__form grid">
-                    <div class="contact__inputs grid">
-                        <!-- <div class="contact__content">
+                    <!-- <div class="contact__inputs grid">
+                        <div class="contact__content">
                             <label for="" class="contact__label">Name</label>
                             <input type="text" class="contact__input">
                         </div>
@@ -1031,35 +1059,46 @@
                         <label for="" class="contact__label">Message</label>
                         <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
                     </div> -->
-
-                        <div>
-                            <a href="https://wa.me/918638113906" class="button button--flex">
-                                Send message on Whatsapp
-                                <i class="uil uil-message button__icon"></i>
-                            </a>
+                    <div>
+                        <a target="_blank"
+                            href="https://wa.me/918638113906?text=Hi%20Thulunga,%20I%20found%20your%20profile%20and%20wanted%20to%20connect!"
+                            class="button button--flex">
+                            Message me on WhatsApp
+                            <i class="uil uil-message button__icon"></i>
+                        </a>
+                        <br>
+                        <div class="contact__description">
+                            <p>
+                                I am actively seeking full-time software development roles. <br>
+                                Also available for <strong>select freelance projects</strong> in Angular, JavaScript, and frontend
+                                development.
+                            </p>
                         </div>
+                    </div>
                 </form>
             </div>
-
         </section>
+
     </main>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
-
         <div class="footer__bg">
             <div class="footer__container container grid">
                 <div>
                     <h1 class="footer__title">Thulunga Basumatary</h1>
-                    <span class="footer__subtitle">Full Stack developer</span>
+                    <span class="footer__subtitle">Software Developer | Angular & Frontend Specialist</span>
                 </div>
 
                 <ul class="footer__links">
                     <li>
-                        <a href="#services" class="footer__link">Services</a>
+                        <a href="#about" class="footer__link">About</a>
                     </li>
                     <li>
-                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                        <a href="#experience" class="footer__link">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="footer__link">Skills</a>
                     </li>
                     <li>
                         <a href="#contact" class="footer__link">Contact</a>
@@ -1067,22 +1106,28 @@
                 </ul>
 
                 <div class="footer__socials">
-                    <a href="http://facebook.com" target="_blank" class="footer__social">
-                        <i class="uil uil-facebook"></i>
+                    <a href="https://www.linkedin.com/in/thulunga" target="_blank" class="footer__social"
+                        aria-label="LinkedIn">
+                        <i class="uil uil-linkedin"></i>
                     </a>
-                    <a href="http://instagram.com" target="_blank" class="footer__social">
-                        <i class="uil uil-instagram"></i>
+                    <a href="https://github.com/thulunga" target="_blank" class="footer__social" aria-label="GitHub">
+                        <i class="uil uil-github"></i>
                     </a>
-                    <a href="http://twitter.com/" target="_blank" class="footer__social">
-                        <i class="uil uil-twitter-alt"></i>
+                    <a href="mailto:thulunga.tb@gmail.com" class="footer__social" aria-label="Email">
+                        <i class="uil uil-envelope"></i>
                     </a>
                 </div>
             </div>
 
-            <p class="footer__copy">&#169; www.thulunga.com. All rights reserved.</p>
+            <!-- update the link here later -> https://thulunga.vercel.app/-->
+            <p class="footer__copy">&#169; <span id="year"></span> <a href="https://thulunga.vercel.app/">Thulunga
+                    Basumatary</a>. All rights reserved.</p>
         </div>
-
     </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 
     <!--==================== SCROLL TOP ====================-->
     <a href="#" class="scrollup" id="scroll-up">
