@@ -847,6 +847,7 @@ img {
     margin-bottom: -20px;
     border-radius: 10px;
 }
+
 .testimonial__data,
 .testimonial__header {
     display: flex;
@@ -882,11 +883,12 @@ img {
     color: var(--first-color)
 }
 
-.swiper-container{
+.swiper-container {
     max-width: 1000px;
 }
-.swiper-wrapper {
-}
+
+.swiper-wrapper {}
+
 /* .testimonial{
     overflow: inherit;
 }
@@ -1364,7 +1366,7 @@ img {
         width: 460px;
     }
 
-    .contact__description{
+    .contact__description {
         margin-top: 1rem;
     }
 
