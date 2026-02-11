@@ -380,6 +380,13 @@ img {
 
 }
 
+
+.home__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
 /*==================== BUTTONS ====================*/
 
 .button {
