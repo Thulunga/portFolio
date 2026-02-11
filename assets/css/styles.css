@@ -287,6 +287,10 @@ img {
 }
 
 /*==================== HOME ====================*/
+.home.section {
+    background: radial-gradient(circle at top right, hsl(var(--hue-color), 92%, 95%), transparent 45%);
+}
+
 .home__container {
     gap: 1rem;
 }
@@ -378,6 +382,13 @@ img {
 .home__scroll-arrow {
     font-size: 1.25rem;
 
+}
+
+
+.home__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
 }
 
 /*==================== BUTTONS ====================*/
@@ -573,6 +584,53 @@ img {
 }
 
 /*==================== QUALIFICATION ====================*/
+
+.qualification__highlights {
+    margin-top: .75rem;
+    display: grid;
+    gap: .35rem;
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+    list-style: disc;
+    padding-left: 1rem;
+}
+
+.services__content--featured {
+    border: 1px solid hsl(var(--hue-color), 69%, 88%);
+    border-radius: 1rem;
+    background: linear-gradient(160deg, var(--container-color), hsl(var(--hue-color), 100%, 99%));
+}
+
+.portfolio__grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.portfolio__card {
+    background: linear-gradient(155deg, var(--container-color), hsl(var(--hue-color), 100%, 99%));
+    border: 1px solid hsl(var(--hue-color), 69%, 88%);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    box-shadow: 0 8px 20px rgba(72, 40, 170, 0.08);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.portfolio__card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(72, 40, 170, 0.16);
+}
+
+.portfolio__tag {
+    display: inline-block;
+    margin: .25rem .35rem 0 0;
+    padding: .28rem .55rem;
+    font-size: var(--smaller-font-size);
+    border-radius: 999px;
+    background-color: var(--first-color-lighter);
+    color: var(--first-color-alt);
+    font-weight: var(--font-medium);
+}
+
 .qualification__tabs {
     display: flex;
     justify-content: space-evenly;
@@ -650,6 +708,10 @@ img {
 
 
 /*==================== SERVICES ====================*/
+.services.section {
+    background: linear-gradient(180deg, transparent 0%, hsl(var(--hue-color), 100%, 99%) 100%);
+}
+
 .services__container {
     gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
