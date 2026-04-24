@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 
@@ -20,6 +19,7 @@ export function Header() {
     { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
     { name: 'Skills', href: '#skills' },
+    { name: 'Achievements', href: '#achievements' },
     { name: 'Contact', href: '#contact' },
   ]
 
@@ -28,7 +28,7 @@ export function Header() {
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="#home" className="flex items-center space-x-2">
+          <a href="#home" className="flex items-center space-x-2">
             <motion.div
               whileHover={{ scale: 1.05 }}
               className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center text-white font-bold"
@@ -36,7 +36,7 @@ export function Header() {
               TB
             </motion.div>
             <span className="hidden sm:block text-lg font-bold text-dark-900 dark:text-white">Thulunga</span>
-          </Link>
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">

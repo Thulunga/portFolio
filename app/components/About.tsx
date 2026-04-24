@@ -35,15 +35,15 @@ export function About() {
             className="space-y-6"
           >
             <p className="text-lg text-dark-600 dark:text-dark-300 leading-relaxed">
-              Results-driven Software Developer with <strong>3+ years</strong> building enterprise-grade Angular and TypeScript applications at SOTI Inc., a global MDM/EMM leader.
+              Results-driven Software Developer with <strong>3+ years</strong> building enterprise-grade Angular and TypeScript applications at <strong>SOTI Inc.</strong>, a global MDM/EMM leader serving 17,000+ customers worldwide.
             </p>
 
             <p className="text-lg text-dark-600 dark:text-dark-300 leading-relaxed">
-              I've architected a <strong>reusable AI-powered chatbot UI package</strong> deployed across multiple products, engineered <strong>performance solutions for 5,000+ record data views</strong>, and led UI implementation for complex enterprise workflows.
+              Architected a <strong>reusable AI-powered chatbot UI package</strong> deployed across multiple products. Engineered performance solutions for <strong>5,000+ record data views</strong>. <strong>MVP Nominee two consecutive years</strong> (2024 and 2025).
             </p>
 
             <p className="text-lg text-dark-600 dark:text-dark-300 leading-relaxed">
-              Passionate about <strong>clean architecture</strong>, <strong>high-performance UIs</strong>, and <strong>full-stack product thinking</strong>. I love translating complex requirements into elegant, accessible, and scalable digital experiences.
+              Focused on <strong>clean architecture</strong>, <strong>high-performance UIs</strong>, and <strong>full-stack product thinking</strong> - delivering accessible, scalable interfaces across complex enterprise workflows.
             </p>
 
             <div className="pt-4 space-y-3">

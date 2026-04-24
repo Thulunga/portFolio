@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Link from 'next/link'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -12,6 +11,7 @@ export function Footer() {
     { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
     { name: 'Skills', href: '#skills' },
+    { name: 'Achievements', href: '#achievements' },
     { name: 'Contact', href: '#contact' },
   ]
 
@@ -46,7 +46,7 @@ export function Footer() {
   ]
 
   return (
-    <footer className="bg-dark-900 dark:bg-dark-950 text-white">
+    <footer className="bg-dark-900 text-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
         <div className="py-16 grid md:grid-cols-4 gap-12">

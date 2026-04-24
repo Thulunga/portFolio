@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Link from 'next/link'
 
 export function Projects() {
   const projects = [
@@ -117,8 +116,8 @@ export function Projects() {
 
                 {/* Highlights */}
                 <div className="space-y-2">
-                  {project.highlights.map((highlight, idx) => (
-                    <div key={idx} className="flex items-start space-x-2 text-sm text-dark-600 dark:text-dark-400">
+                  {project.highlights.map((highlight) => (
+                    <div key={highlight} className="flex items-start space-x-2 text-sm text-dark-600 dark:text-dark-400">
                       <span className="text-blue-500 font-bold mt-0.5">✓</span>
                       <span>{highlight}</span>
                     </div>

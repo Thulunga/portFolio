@@ -13,7 +13,8 @@ export function Experience() {
         'Architected and shipped a reusable AI-powered chatbot Angular package deployed across multiple SOTI products',
         'Engineered frontend performance for screens rendering 5,000+ records using virtual scrolling and OnPush change detection',
         'Designed scalable Angular module architecture with RxJS-based state management',
-        'Cross-functional frontend lead bridging Product, Design, and Backend teams',
+        'Cross-functional frontend lead bridging Product, Design, and Backend - delivering WCAG-compliant interfaces on schedule',
+        'Contributed to SDE-1 technical interviews - shaping hiring standards beyond individual contributor scope',
         'MVP Nominee 2x Consecutive (2024 and 2025)',
       ],
     },
@@ -97,7 +98,7 @@ export function Experience() {
               <ul className="space-y-3">
                 {exp.highlights.map((highlight, idx) => (
                   <motion.li
-                    key={idx}
+                    key={highlight}
                     initial={{ opacity: 0, x: -10 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: idx * 0.1 }}
