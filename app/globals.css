@@ -12,10 +12,12 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
   @apply bg-white dark:bg-dark-900 text-dark-900 dark:text-white transition-colors duration-300;
 }
 

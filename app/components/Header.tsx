@@ -16,7 +16,7 @@ export function Header() {
   }
 
   return (
-    <header className="fixed top-0 w-full bg-white dark:bg-dark-900 shadow-sm dark:shadow-dark-800/20 z-50 transition-colors duration-300">
+    <header className="fixed top-0 w-full bg-white/95 dark:bg-dark-900/95 backdrop-blur border-b border-gray-200/70 dark:border-dark-700/60 shadow-sm dark:shadow-dark-800/20 z-50 transition-colors duration-300">
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -48,7 +48,7 @@ export function Header() {
           </div>
 
           {/* Right Actions */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 sm:space-x-4">
             <motion.button
               whileHover={{ scale: 1.1 }}
               onClick={toggleTheme}
@@ -61,7 +61,7 @@ export function Header() {
             {/* Mobile menu button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-dark-800"
+              className="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-dark-800 text-dark-800 dark:text-dark-100"
               aria-label="Toggle menu"
             >
               {isOpen ? '✕' : '☰'}
@@ -75,13 +75,13 @@ export function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden pb-4 border-t border-gray-200 dark:border-dark-800"
+            className="md:hidden py-3 mb-3 border border-gray-200 dark:border-dark-700 rounded-xl bg-white dark:bg-dark-900 shadow-lg"
           >
             {primaryNavLinks.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="block px-3 py-2 text-sm font-medium text-dark-600 dark:text-dark-400 hover:text-blue-500 dark:hover:text-blue-400"
+                className="block px-4 py-2.5 text-sm font-semibold text-dark-700 dark:text-dark-300 hover:text-blue-500 dark:hover:text-blue-400"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}

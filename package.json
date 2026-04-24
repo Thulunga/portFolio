@@ -6,8 +6,11 @@
     "node": "24.x"
   },
   "scripts": {
+    "clean": "node -e \"try{require('fs').rmSync('.next',{recursive:true,force:true});console.log('cleaned .next')}catch(e){console.error(e);process.exit(1)}\"",
     "dev": "next dev",
+    "dev:clean": "npm run clean && next dev",
     "build": "next build",
+    "build:clean": "npm run clean && next build",
     "start": "next start",
     "lint": "next lint"
   },
