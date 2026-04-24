@@ -74,12 +74,22 @@ export function Hero() {
               </div>
             </motion.div>
 
-            <motion.div variants={itemVariants} className="flex gap-4 pt-4">
+            <motion.div variants={itemVariants} className="flex flex-wrap gap-4 pt-4">
               <a
                 href="#contact"
                 className="inline-block bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-all transform hover:scale-105"
               >
                 Get in Touch
+              </a>
+              <a
+                href="/resume.pdf"
+                download="Thulunga_Basumatary_Resume.pdf"
+                className="inline-flex items-center gap-2 border-2 border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white font-semibold py-3 px-8 rounded-lg transition-all"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                </svg>
+                Resume
               </a>
               <a
                 href="https://github.com/Thulunga"
