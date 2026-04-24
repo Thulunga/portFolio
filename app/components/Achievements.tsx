@@ -99,7 +99,7 @@ export function Achievements() {
           ))}
         </motion.div>
 
-        {/* MVP Certificate Photo */}
+        {/* MVP Certificates - 2024 & 2025 */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -107,21 +107,43 @@ export function Achievements() {
           viewport={{ once: true }}
           className="mt-10"
         >
-          <div className="bg-white dark:bg-dark-800 rounded-2xl overflow-hidden shadow-xl border border-amber-200 dark:border-amber-800/40">
-            <div className="bg-gradient-to-r from-amber-400 to-orange-500 px-6 py-4 flex items-center gap-3">
-              <span className="text-2xl">🏆</span>
-              <div>
-                <h3 className="text-white font-bold text-lg">MVP Nominee Certificate</h3>
-                <p className="text-white/80 text-sm">SOTI Inc. — Recognition of Excellence</p>
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* MVP 2024 */}
+            <div className="bg-white dark:bg-dark-800 rounded-2xl overflow-hidden shadow-xl border border-amber-200 dark:border-amber-800/40">
+              <div className="bg-gradient-to-r from-amber-400 to-orange-500 px-6 py-4 flex items-center gap-3">
+                <span className="text-2xl">🏆</span>
+                <div>
+                  <h3 className="text-white font-bold text-lg">MVP Nominee 2024</h3>
+                  <p className="text-white/80 text-sm">SOTI Inc.</p>
+                </div>
+              </div>
+              <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
+                <Image
+                  src="/mvp_img.png"
+                  alt="MVP Nominee Certificate 2024 - SOTI Inc."
+                  fill
+                  className="object-cover object-top"
+                />
               </div>
             </div>
-            <div className="relative w-full" style={{ aspectRatio: '16/7' }}>
-              <Image
-                src="/mvp_img.png"
-                alt="MVP Nominee Certificate - SOTI Inc."
-                fill
-                className="object-cover object-top"
-              />
+
+            {/* MVP 2025 */}
+            <div className="bg-white dark:bg-dark-800 rounded-2xl overflow-hidden shadow-xl border border-blue-200 dark:border-blue-800/40">
+              <div className="bg-gradient-to-r from-blue-400 to-cyan-500 px-6 py-4 flex items-center gap-3">
+                <span className="text-2xl">⭐</span>
+                <div>
+                  <h3 className="text-white font-bold text-lg">MVP Nominee 2025</h3>
+                  <p className="text-white/80 text-sm">SOTI Inc.</p>
+                </div>
+              </div>
+              <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
+                <Image
+                  src="/mvp_img_2025.png"
+                  alt="MVP Nominee Certificate 2025 - SOTI Inc."
+                  fill
+                  className="object-cover object-top"
+                />
+              </div>
             </div>
           </div>
         </motion.div>
