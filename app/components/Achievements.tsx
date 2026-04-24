@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export function Achievements() {
   const achievements = [
@@ -96,6 +97,33 @@ export function Achievements() {
               </div>
             </motion.div>
           ))}
+        </motion.div>
+
+        {/* MVP Certificate Photo */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="mt-10"
+        >
+          <div className="bg-white dark:bg-dark-800 rounded-2xl overflow-hidden shadow-xl border border-amber-200 dark:border-amber-800/40">
+            <div className="bg-gradient-to-r from-amber-400 to-orange-500 px-6 py-4 flex items-center gap-3">
+              <span className="text-2xl">🏆</span>
+              <div>
+                <h3 className="text-white font-bold text-lg">MVP Nominee Certificate</h3>
+                <p className="text-white/80 text-sm">SOTI Inc. — Recognition of Excellence</p>
+              </div>
+            </div>
+            <div className="relative w-full" style={{ aspectRatio: '16/7' }}>
+              <Image
+                src="/mvp_img.png"
+                alt="MVP Nominee Certificate - SOTI Inc."
+                fill
+                className="object-cover object-top"
+              />
+            </div>
+          </div>
         </motion.div>
 
         {/* Quick Stats Bar */}
