@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Providers } from './providers'
 import './globals.css'
 import { JsonLd } from './components/JsonLd'
+import { Analytics } from './components/Analytics'
 import { personJsonLd, siteConfig, websiteJsonLd } from './lib/seo'
 
 export const metadata: Metadata = {
@@ -74,6 +75,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <Analytics />
+      </head>
       <body className="overflow-x-hidden">
         <JsonLd data={personJsonLd} />
         <JsonLd data={websiteJsonLd} />
