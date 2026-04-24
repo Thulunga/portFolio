@@ -92,7 +92,7 @@ export function Projects() {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
         >
           {projects.map((project) => (
-            <motion.div
+            <motion.article
               key={project.name}
               variants={itemVariants}
               className={`group bg-white dark:bg-dark-800 rounded-xl overflow-hidden shadow-lg dark:shadow-dark-800/20 hover:shadow-2xl dark:hover:shadow-dark-700/30 transition-all border border-gray-100 dark:border-dark-700 ${
@@ -151,7 +151,7 @@ export function Projects() {
                   </motion.a>
                 )}
               </div>
-            </motion.div>
+            </motion.article>
           ))}
         </motion.div>
       </div>
