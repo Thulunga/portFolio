@@ -49,7 +49,7 @@ export function Footer() {
     <footer className="bg-dark-900 text-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
-        <div className="py-16 grid md:grid-cols-4 gap-12">
+        <div className="py-10 sm:py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12">
           {/* Brand */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -57,13 +57,13 @@ export function Footer() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center font-bold">
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center font-bold text-sm">
                 TB
               </div>
-              <span className="text-xl font-bold">Thulunga</span>
+              <span className="text-lg sm:text-xl font-bold">Thulunga</span>
             </div>
-            <p className="text-gray-400 text-sm">Software Developer I | Angular & TypeScript Specialist</p>
+            <p className="text-gray-400 text-xs sm:text-sm">Software Developer I | Angular & TypeScript Specialist</p>
           </motion.div>
 
           {/* Quick Links */}
@@ -73,11 +73,11 @@ export function Footer() {
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <h3 className="font-bold text-lg mb-4">Navigation</h3>
-            <ul className="space-y-2">
+            <h3 className="font-bold text-base sm:text-lg mb-3 sm:mb-4">Navigation</h3>
+            <ul className="space-y-1.5 sm:space-y-2">
               {footerLinks.slice(0, 3).map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="text-gray-400 hover:text-white transition-colors">
+                  <a href={link.href} className="text-gray-400 hover:text-white transition-colors text-sm">
                     {link.name}
                   </a>
                 </li>
@@ -91,11 +91,11 @@ export function Footer() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h3 className="font-bold text-lg mb-4">&nbsp;</h3>
-            <ul className="space-y-2">
+            <h3 className="font-bold text-base sm:text-lg mb-3 sm:mb-4">&nbsp;</h3>
+            <ul className="space-y-1.5 sm:space-y-2">
               {footerLinks.slice(3).map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="text-gray-400 hover:text-white transition-colors">
+                  <a href={link.href} className="text-gray-400 hover:text-white transition-colors text-sm">
                     {link.name}
                   </a>
                 </li>
@@ -110,15 +110,15 @@ export function Footer() {
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <h3 className="font-bold text-lg mb-4">Connect</h3>
-            <div className="space-y-3">
+            <h3 className="font-bold text-base sm:text-lg mb-3 sm:mb-4">Connect</h3>
+            <div className="space-y-2 sm:space-y-3">
               {socialLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors"
+                  className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   {link.icon}
                   <span>{link.name}</span>
@@ -137,12 +137,12 @@ export function Footer() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
-          className="py-8 flex flex-col md:flex-row items-center justify-between space-y-4"
+          className="py-6 sm:py-8 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-center sm:text-left"
         >
-          <p className="text-gray-400 text-sm">
+          <p className="text-gray-400 text-xs sm:text-sm">
             © {currentYear} Thulunga Basumatary. All rights reserved.
           </p>
-          <p className="text-gray-400 text-sm">
+          <p className="text-gray-400 text-xs sm:text-sm">
             Designed and built with <span className="text-blue-500">React</span> + <span className="text-purple-500">Next.js</span> + <span className="text-cyan-500">Tailwind CSS</span>
           </p>
         </motion.div>
