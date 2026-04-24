@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  @apply bg-white dark:bg-dark-900 text-dark-900 dark:text-white transition-colors duration-300;
+}
+
+/* Smooth transitions */
+* {
+  @apply transition-colors duration-300;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-dark-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-500 dark:bg-blue-600 rounded;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-blue-600 dark:bg-blue-700;
+}
+
+/* Selection styling */
+::selection {
+  @apply bg-blue-500 text-white;
+}
+
+/* Link underline animation */
+a {
+  @apply transition-colors duration-300;
+}
+
+/* Smooth page transitions */
+.fade-in {
+  @apply animate-fadeIn;
+}
+
+.slide-up {
+  @apply animate-slideUp;
+}
