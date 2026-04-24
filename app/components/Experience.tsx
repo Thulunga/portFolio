@@ -75,7 +75,7 @@ export function Experience() {
           className="space-y-6 sm:space-y-8"
         >
           {experiences.map((exp, index) => (
-            <motion.div
+            <motion.article
               key={exp.title}
               variants={itemVariants}
               className="bg-white dark:bg-dark-800 rounded-xl p-4 sm:p-8 shadow-lg dark:shadow-dark-800/20 border border-gray-100 dark:border-dark-700 hover:shadow-2xl dark:hover:shadow-dark-700/30 transition-all"
@@ -110,7 +110,7 @@ export function Experience() {
                   </motion.li>
                 ))}
               </ul>
-            </motion.div>
+            </motion.article>
           ))}
         </motion.div>
 

@@ -1,19 +1,12 @@
 'use client'
 
+import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { primaryNavLinks } from '../lib/seo'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
-
-  const footerLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Achievements', href: '#achievements' },
-    { name: 'Contact', href: '#contact' },
-  ]
+  const footerLinks = [...primaryNavLinks, { name: 'Blog', href: '/blog' }]
 
   const socialLinks = [
     {
@@ -77,9 +70,9 @@ export function Footer() {
             <ul className="space-y-1.5 sm:space-y-2">
               {footerLinks.slice(0, 3).map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="text-gray-400 hover:text-white transition-colors text-sm">
+                  <Link href={link.href} className="text-gray-400 hover:text-white transition-colors text-sm">
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -95,9 +88,9 @@ export function Footer() {
             <ul className="space-y-1.5 sm:space-y-2">
               {footerLinks.slice(3).map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="text-gray-400 hover:text-white transition-colors text-sm">
+                  <Link href={link.href} className="text-gray-400 hover:text-white transition-colors text-sm">
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

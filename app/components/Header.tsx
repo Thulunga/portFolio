@@ -1,7 +1,9 @@
 'use client'
 
+import Link from 'next/link'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { primaryNavLinks } from '../lib/seo'
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -13,22 +15,12 @@ export function Header() {
     setIsDark(!isDark)
   }
 
-  const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Achievements', href: '#achievements' },
-    { name: 'Contact', href: '#contact' },
-  ]
-
   return (
     <header className="fixed top-0 w-full bg-white dark:bg-dark-900 shadow-sm dark:shadow-dark-800/20 z-50 transition-colors duration-300">
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <a href="#home" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2" aria-label="Go to home page">
             <motion.div
               whileHover={{ scale: 1.05 }}
               className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center text-white font-bold"
@@ -36,19 +28,22 @@ export function Header() {
               TB
             </motion.div>
             <span className="hidden sm:block text-lg font-bold text-dark-900 dark:text-white">Thulunga</span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
-            {navItems.map((item) => (
-              <motion.a
+            {primaryNavLinks.map((item) => (
+              <motion.div
                 key={item.name}
-                href={item.href}
                 whileHover={{ color: '#0ea5e9' }}
-                className="px-3 py-2 text-sm font-medium text-dark-600 dark:text-dark-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
               >
-                {item.name}
-              </motion.a>
+                <Link
+                  href={item.href}
+                  className="px-3 py-2 text-sm font-medium text-dark-600 dark:text-dark-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
+                >
+                  {item.name}
+                </Link>
+              </motion.div>
             ))}
           </div>
 
@@ -82,15 +77,15 @@ export function Header() {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden pb-4 border-t border-gray-200 dark:border-dark-800"
           >
-            {navItems.map((item) => (
-              <a
+            {primaryNavLinks.map((item) => (
+              <Link
                 key={item.name}
                 href={item.href}
                 className="block px-3 py-2 text-sm font-medium text-dark-600 dark:text-dark-400 hover:text-blue-500 dark:hover:text-blue-400"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </motion.div>
         )}

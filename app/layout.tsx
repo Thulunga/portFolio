@@ -1,21 +1,69 @@
 import type { Metadata } from 'next'
 import { Providers } from './providers'
 import './globals.css'
+import { JsonLd } from './components/JsonLd'
+import { personJsonLd, siteConfig, websiteJsonLd } from './lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Thulunga Basumatary - Software Developer I | Angular & TypeScript',
-  description: 'Software Developer I at SOTI Inc. Specialist in Angular, TypeScript, and enterprise frontend development. MVP Nominee 2x | NIT Calicut',
-  keywords: ['Thulunga Basumatary', 'Software Developer', 'Angular', 'TypeScript', 'Frontend Developer', 'Full-Stack', 'SOTI Inc'],
-  authors: [{ name: 'Thulunga Basumatary', url: 'https://linkedin.com/in/thulunga' }],
+  metadataBase: new URL(siteConfig.siteUrl),
+  title: {
+    default: 'Thulunga Basumatary | Software Developer Portfolio',
+    template: '%s | Thulunga Basumatary',
+  },
+  description:
+    'Software Developer Portfolio of Thulunga Basumatary - Software Developer I at SOTI Inc. specializing in Angular, TypeScript, React, and enterprise frontend engineering.',
+  keywords: [
+    'software developer portfolio',
+    'frontend developer portfolio',
+    'angular developer portfolio',
+    'typescript developer',
+    'react developer portfolio',
+    'Thulunga Basumatary',
+    'SOTI developer',
+    'enterprise frontend developer',
+  ],
+  applicationName: siteConfig.siteName,
+  authors: [{ name: siteConfig.author, url: siteConfig.linkedin }],
+  creator: siteConfig.author,
+  publisher: siteConfig.author,
+  alternates: {
+    canonical: '/',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
   openGraph: {
     type: 'website',
-    url: 'https://thulunga.vercel.app',
-    title: 'Thulunga Basumatary - Software Developer I',
-    description: 'Software Developer I at SOTI Inc. Specialist in Angular, TypeScript, and enterprise frontend development.',
+    url: siteConfig.siteUrl,
+    siteName: siteConfig.siteName,
+    title: 'Thulunga Basumatary | Software Developer Portfolio',
+    description:
+      'Explore projects, achievements, and experience of Thulunga Basumatary, a software developer focused on Angular, TypeScript, and scalable frontend systems.',
+    locale: 'en_US',
+    images: [
+      {
+        url: siteConfig.defaultOgImage,
+        width: 1200,
+        height: 630,
+        alt: 'Thulunga Basumatary developer portfolio profile image',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
+    title: 'Thulunga Basumatary | Software Developer Portfolio',
+    description:
+      'Software Developer I portfolio with Angular, TypeScript, and full-stack project highlights.',
     creator: '@Thulunga',
+    images: [siteConfig.defaultOgImage],
   },
 }
 
@@ -26,31 +74,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'Person',
-              name: 'Thulunga Basumatary',
-              jobTitle: 'Software Developer I',
-              url: 'https://thulunga.vercel.app',
-              sameAs: [
-                'https://linkedin.com/in/thulunga',
-                'https://github.com/Thulunga'
-              ],
-              workLocation: {
-                '@type': 'Place',
-                name: 'Gurgaon, India'
-              }
-            })
-          }}
-        />
-      </head>
       <body className="overflow-x-hidden">
+        <JsonLd data={personJsonLd} />
+        <JsonLd data={websiteJsonLd} />
         <Providers>
           {children}
         </Providers>

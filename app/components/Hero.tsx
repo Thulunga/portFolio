@@ -76,7 +76,7 @@ export function Hero() {
 
             <motion.div variants={itemVariants} className="flex flex-col xs:flex-row flex-wrap gap-2 sm:gap-4 pt-2 sm:pt-4">
               <a
-                href="#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold py-2.5 sm:py-3 px-4 sm:px-8 rounded-lg transition-all transform hover:scale-105 text-sm sm:text-base min-h-[44px]"
               >
                 <svg className="w-4 sm:w-5 h-4 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -85,7 +85,7 @@ export function Hero() {
                 Get in Touch
               </a>
               <a
-                href="/resume.pdf"
+                href="/Resume.pdf"
                 download="Thulunga_Basumatary_Resume.pdf"
                 className="inline-flex items-center justify-center gap-2 border-2 border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white font-semibold py-2.5 sm:py-3 px-4 sm:px-8 rounded-lg transition-all hover:scale-105 text-sm sm:text-base min-h-[44px]"
               >
@@ -113,6 +113,7 @@ export function Hero() {
                 href="https://linkedin.com/in/thulunga"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Visit LinkedIn profile"
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 className="text-dark-600 dark:text-dark-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors p-2 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/20"
               >
@@ -122,6 +123,7 @@ export function Hero() {
               </motion.a>
               <motion.a
                 href="mailto:thulunga.tb@gmail.com"
+                aria-label="Send email"
                 whileHover={{ scale: 1.2, rotate: -5 }}
                 className="text-dark-600 dark:text-dark-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors p-2 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/20"
               >
