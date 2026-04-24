@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { motion, easeOut } from 'framer-motion'
 import Image from 'next/image'
 
 export function Hero() {
@@ -20,7 +20,7 @@ export function Hero() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: 'easeOut' },
+      transition: { duration: 0.8, ease: easeOut },
     },
   }
 
