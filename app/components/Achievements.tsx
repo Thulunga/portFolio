@@ -35,6 +35,35 @@ export function Achievements() {
     },
   ]
 
+  const certificates = [
+    {
+      icon: '🏆',
+      title: 'MVP Nominee 2024',
+      subtitle: 'SOTI Inc.',
+      image: '/mvp_img.png',
+      imageAlt: 'MVP Nominee Certificate 2024 - SOTI Inc.',
+      accent: 'from-amber-400 to-orange-500',
+      border: 'border-amber-200 dark:border-amber-800/40',
+      ring: 'ring-amber-100/80 dark:ring-amber-700/30',
+      shadow: 'hover:shadow-amber-200/70 dark:hover:shadow-amber-900/40',
+      badge: 'bg-amber-500/90',
+      year: '2024',
+    },
+    {
+      icon: '⭐',
+      title: 'MVP Nominee 2025',
+      subtitle: 'SOTI Inc.',
+      image: '/mvp_img_2025.png',
+      imageAlt: 'MVP Nominee Certificate 2025 - SOTI Inc.',
+      accent: 'from-blue-400 to-cyan-500',
+      border: 'border-blue-200 dark:border-blue-800/40',
+      ring: 'ring-blue-100/80 dark:ring-blue-700/30',
+      shadow: 'hover:shadow-blue-200/70 dark:hover:shadow-blue-900/40',
+      badge: 'bg-sky-500/90',
+      year: '2025',
+    },
+  ]
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -107,44 +136,44 @@ export function Achievements() {
           viewport={{ once: true }}
           className="mt-10"
         >
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* MVP 2024 */}
-            <div className="bg-white dark:bg-dark-800 rounded-2xl overflow-hidden shadow-xl border border-amber-200 dark:border-amber-800/40">
-              <div className="bg-gradient-to-r from-amber-400 to-orange-500 px-6 py-4 flex items-center gap-3">
-                <span className="text-2xl">🏆</span>
-                <div>
-                  <h3 className="text-white font-bold text-lg">MVP Nominee 2024</h3>
-                  <p className="text-white/80 text-sm">SOTI Inc.</p>
-                </div>
-              </div>
-              <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
-                <Image
-                  src="/mvp_img.png"
-                  alt="MVP Nominee Certificate 2024 - SOTI Inc."
-                  fill
-                  className="object-cover object-top"
-                />
-              </div>
-            </div>
+          <div className="text-center mb-6">
+            <p className="inline-flex items-center rounded-full border border-gray-200 dark:border-dark-700 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-dark-600 dark:text-dark-300 bg-white/90 dark:bg-dark-800/90">
+              Recognition Showcase
+            </p>
+          </div>
 
-            {/* MVP 2025 */}
-            <div className="bg-white dark:bg-dark-800 rounded-2xl overflow-hidden shadow-xl border border-blue-200 dark:border-blue-800/40">
-              <div className="bg-gradient-to-r from-blue-400 to-cyan-500 px-6 py-4 flex items-center gap-3">
-                <span className="text-2xl">⭐</span>
-                <div>
-                  <h3 className="text-white font-bold text-lg">MVP Nominee 2025</h3>
-                  <p className="text-white/80 text-sm">SOTI Inc.</p>
+          <div className="grid md:grid-cols-2 gap-6">
+            {certificates.map((certificate) => (
+              <motion.div
+                key={certificate.title}
+                whileHover={{ y: -5 }}
+                transition={{ duration: 0.25 }}
+                className={`group relative bg-white dark:bg-dark-800 rounded-2xl overflow-hidden shadow-xl ${certificate.shadow} border ${certificate.border} transition-all duration-300`}
+              >
+                <div className={`bg-gradient-to-r ${certificate.accent} px-6 py-4 flex items-center justify-between gap-3`}>
+                  <div className="flex items-center gap-3">
+                    <span className="text-2xl">{certificate.icon}</span>
+                    <div>
+                      <h3 className="text-white font-bold text-lg">{certificate.title}</h3>
+                      <p className="text-white/80 text-sm">{certificate.subtitle}</p>
+                    </div>
+                  </div>
+                  <span className={`${certificate.badge} text-white text-xs font-bold px-2.5 py-1 rounded-full`}>{certificate.year}</span>
                 </div>
-              </div>
-              <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
-                <Image
-                  src="/mvp_img_2025.png"
-                  alt="MVP Nominee Certificate 2025 - SOTI Inc."
-                  fill
-                  className="object-cover object-top"
-                />
-              </div>
-            </div>
+
+                <div className="p-4 sm:p-5 bg-gradient-to-b from-slate-50/80 to-white dark:from-dark-900/80 dark:to-dark-900">
+                  <div className={`relative w-full rounded-xl ring-1 ${certificate.ring} bg-[#eaf7ff] dark:bg-dark-900/70 overflow-hidden`} style={{ aspectRatio: '1.18/1' }}>
+                    <Image
+                      src={certificate.image}
+                      alt={certificate.imageAlt}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-contain p-1.5 sm:p-2 transition-transform duration-500 group-hover:scale-[1.015]"
+                    />
+                  </div>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </motion.div>
 
