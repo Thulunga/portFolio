@@ -82,20 +82,20 @@ export function Achievements() {
   }
 
   return (
-    <section id="achievements" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white dark:from-dark-800 dark:to-dark-900">
+    <section id="achievements" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white dark:from-dark-800 dark:to-dark-900">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-10 sm:mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-dark-900 dark:text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-900 dark:text-white mb-4">
             Achievements & Recognition
           </h2>
-          <div className="h-1 w-24 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full mb-4"></div>
-          <p className="text-dark-600 dark:text-dark-400 text-lg max-w-2xl mx-auto">
+          <div className="h-1 w-20 sm:w-24 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full mb-4"></div>
+          <p className="text-dark-600 dark:text-dark-400 text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
             Key milestones and recognitions from professional work and academic background.
           </p>
         </motion.div>
@@ -105,7 +105,7 @@ export function Achievements() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8"
         >
           {achievements.map((item) => (
             <motion.div
@@ -114,15 +114,15 @@ export function Achievements() {
               whileHover={{ y: -4 }}
               className="bg-white dark:bg-dark-800 rounded-xl overflow-hidden shadow-lg dark:shadow-dark-800/20 hover:shadow-xl dark:hover:shadow-dark-700/30 transition-all border border-gray-100 dark:border-dark-700"
             >
-              <div className={`bg-gradient-to-r ${item.color} p-5 flex items-center space-x-4`}>
-                <div className="text-4xl" role="img" aria-label={item.title}>{item.icon}</div>
-                <div className="text-white">
-                  <h3 className="text-lg font-bold leading-tight">{item.title}</h3>
-                  <p className="text-white/85 text-sm mt-0.5">{item.detail}</p>
+              <div className={`bg-gradient-to-r ${item.color} p-4 sm:p-5 flex items-center gap-3 sm:gap-4`}>
+                <div className="text-3xl sm:text-4xl flex-shrink-0" role="img" aria-label={item.title}>{item.icon}</div>
+                <div className="text-white min-w-0">
+                  <h3 className="text-base sm:text-lg font-bold leading-tight">{item.title}</h3>
+                  <p className="text-white/85 text-xs sm:text-sm mt-0.5">{item.detail}</p>
                 </div>
               </div>
-              <div className="p-5">
-                <p className="text-dark-600 dark:text-dark-300 text-sm leading-relaxed">{item.description}</p>
+              <div className="p-4 sm:p-5">
+                <p className="text-dark-600 dark:text-dark-300 text-xs sm:text-sm leading-relaxed">{item.description}</p>
               </div>
             </motion.div>
           ))}
@@ -134,15 +134,15 @@ export function Achievements() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="mt-10"
+          className="mt-8 sm:mt-10"
         >
-          <div className="text-center mb-6">
-            <p className="inline-flex items-center rounded-full border border-gray-200 dark:border-dark-700 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-dark-600 dark:text-dark-300 bg-white/90 dark:bg-dark-800/90">
+          <div className="text-center mb-5 sm:mb-6">
+            <p className="inline-flex items-center rounded-full border border-gray-200 dark:border-dark-700 px-3 sm:px-4 py-1 sm:py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-dark-600 dark:text-dark-300 bg-white/90 dark:bg-dark-800/90">
               Recognition Showcase
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             {certificates.map((certificate) => (
               <motion.div
                 key={certificate.title}
@@ -150,25 +150,25 @@ export function Achievements() {
                 transition={{ duration: 0.25 }}
                 className={`group relative bg-white dark:bg-dark-800 rounded-2xl overflow-hidden shadow-xl ${certificate.shadow} border ${certificate.border} transition-all duration-300`}
               >
-                <div className={`bg-gradient-to-r ${certificate.accent} px-6 py-4 flex items-center justify-between gap-3`}>
-                  <div className="flex items-center gap-3">
-                    <span className="text-2xl">{certificate.icon}</span>
-                    <div>
-                      <h3 className="text-white font-bold text-lg">{certificate.title}</h3>
-                      <p className="text-white/80 text-sm">{certificate.subtitle}</p>
+                <div className={`bg-gradient-to-r ${certificate.accent} px-3 sm:px-6 py-3 sm:py-4 flex items-center justify-between gap-2 sm:gap-3`}>
+                  <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+                    <span className="text-xl sm:text-2xl flex-shrink-0">{certificate.icon}</span>
+                    <div className="min-w-0">
+                      <h3 className="text-white font-bold text-sm sm:text-lg">{certificate.title}</h3>
+                      <p className="text-white/80 text-xs sm:text-sm">{certificate.subtitle}</p>
                     </div>
                   </div>
-                  <span className={`${certificate.badge} text-white text-xs font-bold px-2.5 py-1 rounded-full`}>{certificate.year}</span>
+                  <span className={`${certificate.badge} text-white text-xs font-bold px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full flex-shrink-0`}>{certificate.year}</span>
                 </div>
 
-                <div className="p-4 sm:p-5 bg-gradient-to-b from-slate-50/80 to-white dark:from-dark-900/80 dark:to-dark-900">
+                <div className="p-3 sm:p-5 bg-gradient-to-b from-slate-50/80 to-white dark:from-dark-900/80 dark:to-dark-900">
                   <div className={`relative w-full rounded-xl ring-1 ${certificate.ring} bg-[#eaf7ff] dark:bg-dark-900/70 overflow-hidden`} style={{ aspectRatio: '1.18/1' }}>
                     <Image
                       src={certificate.image}
                       alt={certificate.imageAlt}
                       fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      className="object-contain p-1.5 sm:p-2 transition-transform duration-500 group-hover:scale-[1.015]"
+                      sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 50vw"
+                      className="object-contain p-1 sm:p-1.5 md:p-2 transition-transform duration-500 group-hover:scale-[1.015]"
                     />
                   </div>
                 </div>
@@ -183,7 +183,7 @@ export function Achievements() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
-          className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6"
+          className="mt-8 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6"
         >
           {[
             { value: '3+', label: 'Years at SOTI' },
@@ -193,12 +193,12 @@ export function Achievements() {
           ].map((stat) => (
             <div
               key={stat.label}
-              className="text-center bg-white dark:bg-dark-800 rounded-xl p-5 border border-gray-100 dark:border-dark-700 shadow-sm"
+              className="text-center bg-white dark:bg-dark-800 rounded-xl p-3 sm:p-5 border border-gray-100 dark:border-dark-700 shadow-sm"
             >
-              <div className="text-3xl font-black bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+              <div className="text-2xl sm:text-3xl font-black bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
                 {stat.value}
               </div>
-              <div className="text-dark-600 dark:text-dark-400 text-sm font-medium mt-1">{stat.label}</div>
+              <div className="text-dark-600 dark:text-dark-400 text-xs sm:text-sm font-medium mt-1">{stat.label}</div>
             </div>
           ))}
         </motion.div>

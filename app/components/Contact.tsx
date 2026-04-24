@@ -54,20 +54,20 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white dark:from-dark-800 dark:to-dark-900">
+    <section id="contact" className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white dark:from-dark-800 dark:to-dark-900">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-10 sm:mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-dark-900 dark:text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-dark-900 dark:text-white mb-4">
             Let's Connect
           </h2>
-          <div className="h-1 w-24 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full mb-6"></div>
-          <p className="text-lg text-dark-600 dark:text-dark-300 max-w-2xl mx-auto">
+          <div className="h-1 w-20 sm:w-24 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto rounded-full mb-4 sm:mb-6"></div>
+          <p className="text-sm sm:text-base md:text-lg text-dark-600 dark:text-dark-300 max-w-2xl mx-auto">
             Open to senior frontend, full-stack, and product engineering roles. Let's build something great together.
           </p>
         </motion.div>
@@ -78,7 +78,7 @@ export function Contact() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-12"
         >
           {contactLinks.map((link) => (
             <motion.a
@@ -88,12 +88,14 @@ export function Contact() {
               rel="noopener noreferrer"
               variants={itemVariants}
               whileHover={{ y: -5 }}
-              className={`bg-gradient-to-br ${link.color} p-6 rounded-xl text-white shadow-lg hover:shadow-xl transition-all cursor-pointer group`}
+              className={`bg-gradient-to-br ${link.color} p-5 sm:p-6 rounded-xl text-white shadow-lg hover:shadow-xl transition-all cursor-pointer group min-h-[200px] sm:min-h-auto flex flex-col justify-between`}
             >
-              <div className="text-4xl mb-3 group-hover:scale-110 transition-transform">{link.icon}</div>
-              <h3 className="text-lg font-bold mb-1">{link.title}</h3>
-              <p className="text-white/90 text-sm">{link.subtitle}</p>
-              <div className="mt-4 flex items-center space-x-2 text-white/80 group-hover:text-white transition-colors">
+              <div>
+                <div className="text-3xl sm:text-4xl mb-2 sm:mb-3 group-hover:scale-110 transition-transform inline-block">{link.icon}</div>
+                <h3 className="text-base sm:text-lg font-bold mb-1">{link.title}</h3>
+                <p className="text-white/90 text-xs sm:text-sm">{link.subtitle}</p>
+              </div>
+              <div className="mt-3 sm:mt-4 flex items-center gap-1.5 sm:gap-2 text-white/80 group-hover:text-white transition-colors text-sm">
                 <span>Get in touch</span>
                 <span className="group-hover:translate-x-1 transition-transform">→</span>
               </div>
@@ -107,13 +109,13 @@ export function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
           viewport={{ once: true }}
-          className="bg-white dark:bg-dark-800 rounded-xl p-8 shadow-lg dark:shadow-dark-800/20 border border-gray-100 dark:border-dark-700 text-center"
+          className="bg-white dark:bg-dark-800 rounded-xl p-5 sm:p-8 shadow-lg dark:shadow-dark-800/20 border border-gray-100 dark:border-dark-700 text-center"
         >
-          <div className="flex items-center justify-center space-x-3 mb-4">
-            <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-            <p className="text-dark-900 dark:text-white font-semibold">Available for new opportunities</p>
+          <div className="flex items-center justify-center gap-2.5 sm:gap-3 mb-4">
+            <div className="w-2.5 sm:w-3 h-2.5 sm:h-3 bg-green-500 rounded-full animate-pulse"></div>
+            <p className="text-dark-900 dark:text-white font-semibold text-sm sm:text-base">Available for new opportunities</p>
           </div>
-          <p className="text-dark-600 dark:text-dark-300">
+          <p className="text-dark-600 dark:text-dark-300 text-xs sm:text-base">
             I'm actively seeking full-time software development roles and select freelance projects in Angular, TypeScript, and full-stack development.
           </p>
         </motion.div>
