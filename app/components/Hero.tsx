@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export function Hero() {
   const containerVariants = {
@@ -130,8 +131,14 @@ export function Hero() {
             >
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full blur-2xl opacity-20 animate-pulse"></div>
               <div className="absolute inset-4 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-10"></div>
-              <div className="relative w-full h-full rounded-full border-2 border-blue-500/30 dark:border-blue-400/30 flex items-center justify-center text-6xl">
-                👨‍💻
+              <div className="relative w-full h-full rounded-full border-2 border-blue-500/30 dark:border-blue-400/30 overflow-hidden">
+                <Image
+                  src="/profile.png"
+                  alt="Thulunga Basumatary"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
               </div>
             </motion.div>
           </motion.div>

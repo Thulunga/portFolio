@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export function About() {
   const stats = [
@@ -70,6 +71,24 @@ export function About() {
             viewport={{ once: true }}
             className="grid grid-cols-1 gap-6"
           >
+            {/* Profile Photo */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="flex justify-center"
+            >
+              <div className="relative w-48 h-48 rounded-2xl overflow-hidden border-4 border-blue-500/30 shadow-xl">
+                <Image
+                  src="/about.jpg"
+                  alt="Thulunga Basumatary"
+                  fill
+                  className="object-cover object-top"
+                />
+              </div>
+            </motion.div>
+
             {stats.map((stat, index) => (
               <motion.div
                 key={stat.label}
