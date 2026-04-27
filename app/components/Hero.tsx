@@ -85,7 +85,7 @@ export function Hero() {
                 Get in Touch
               </a>
               <a
-                href="/Resume.pdf"
+                href="/resume.pdf"
                 download="Thulunga_Basumatary_Resume.pdf"
                 className="inline-flex w-full sm:w-auto items-center justify-center gap-2 border-2 border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white font-semibold py-3 px-4 sm:px-8 rounded-lg transition-all hover:scale-[1.02] text-base min-h-[46px]"
               >
