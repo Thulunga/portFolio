@@ -5,7 +5,7 @@ import { PageScaffold } from '../components/PageScaffold'
 import { buildPageMetadata } from '../lib/seo'
 
 export const metadata: Metadata = buildPageMetadata({
-  title: 'Experience | Software Developer I',
+  title: 'Experience | Software Developer 1',
   description:
     'Professional experience of Thulunga Basumatary at SOTI Inc. including Angular architecture, performance optimization, and enterprise product delivery.',
   path: '/experience',

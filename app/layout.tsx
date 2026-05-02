@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: '%s | Thulunga Basumatary',
   },
   description:
-    'Software Developer Portfolio of Thulunga Basumatary - Software Developer I at SOTI Inc. specializing in Angular, TypeScript, React, and enterprise frontend engineering.',
+    'Software Developer Portfolio of Thulunga Basumatary - Software Developer 1 at SOTI Inc. specializing in Angular, TypeScript, React, and enterprise frontend engineering.',
   keywords: [
     'software developer portfolio',
     'frontend developer portfolio',
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Thulunga Basumatary | Software Developer Portfolio',
     description:
-      'Software Developer I portfolio with Angular, TypeScript, and full-stack project highlights.',
+      'Software Developer 1 portfolio with Angular, TypeScript, and full-stack project highlights.',
     creator: '@Thulunga',
     images: [siteConfig.defaultOgImage],
   },

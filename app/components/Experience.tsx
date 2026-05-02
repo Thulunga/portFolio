@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 export function Experience() {
   const experiences = [
     {
-      title: 'Software Developer I',
+      title: 'Software Developer 1',
       company: 'SOTI Inc.',
       location: 'Gurgaon, India',
       period: 'July 2024 - Present',
@@ -26,7 +26,7 @@ export function Experience() {
       highlights: [
         'Delivered 10+ reusable Angular UI components adopted across multiple enterprise modules',
         'Resolved high-priority UI bugs and performance regressions',
-        'Grew into component design ownership ahead of promotion to Software Developer I',
+        'Grew into component design ownership ahead of promotion to Software Developer 1',
         'Collaborated with cross-functional teams on feature delivery and code reviews',
       ],
     },

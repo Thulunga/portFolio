@@ -56,7 +56,7 @@ export function Footer() {
               </div>
               <span className="text-lg sm:text-xl font-bold">Thulunga</span>
             </div>
-            <p className="text-gray-400 text-xs sm:text-sm">Software Developer I | Angular & TypeScript Specialist</p>
+            <p className="text-gray-400 text-xs sm:text-sm">Software Developer 1 | Angular & TypeScript Specialist</p>
           </motion.div>
 
           {/* Quick Links */}
