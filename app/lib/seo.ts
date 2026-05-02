@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const siteConfig = {
   siteName: 'Thulunga Basumatary Portfolio',
   author: 'Thulunga Basumatary',
-  role: 'Software Developer I',
+  role: 'Software Developer 1',
   siteUrl: 'https://thulunga.vercel.app',
   location: 'Gurgaon, India',
   email: 'thulunga.tb@gmail.com',
@@ -130,7 +130,7 @@ export const faqItems = [
   {
     question: 'Who is Thulunga Basumatary?',
     answer:
-      'Thulunga Basumatary is a Software Developer I at SOTI Inc. specializing in Angular, TypeScript, and enterprise frontend architecture.',
+      'Thulunga Basumatary is a Software Developer 1 at SOTI Inc. specializing in Angular, TypeScript, and enterprise frontend architecture.',
   },
   {
     question: 'What technologies does this frontend developer use?',

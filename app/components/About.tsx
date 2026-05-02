@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export function About() {
   const stats = [
@@ -50,7 +51,13 @@ export function About() {
             <div className="pt-2 sm:pt-4 space-y-2 sm:space-y-3">
               <div className="flex items-start gap-2 text-dark-700 dark:text-dark-200 text-sm sm:text-base">
                 <span className="text-blue-500 font-bold flex-shrink-0">✓</span>
-                <span><strong>B.Tech Computer Science</strong> - NIT Calicut (Graduated 2022)</span>
+                <span>
+                  <strong>B.Tech Computer Science</strong> -{' '}
+                  <Link href="https://nitc.ac.in" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">
+                    NIT Calicut
+                  </Link>{' '}
+                  (Graduated 2022)
+                </span>
               </div>
               <div className="flex items-start gap-2 text-dark-700 dark:text-dark-200 text-sm sm:text-base">
                 <span className="text-blue-500 font-bold flex-shrink-0">✓</span>
@@ -98,7 +105,7 @@ export function About() {
               className="bg-gradient-to-br from-blue-500 to-purple-600 p-4 sm:p-6 rounded-xl text-white"
             >
               <h3 className="font-bold text-base sm:text-lg mb-2">Current Role</h3>
-              <p className="text-blue-100 text-sm sm:text-base">Software Developer I at SOTI Inc. • Gurgaon, India</p>
+              <p className="text-blue-100 text-sm sm:text-base">Software Developer 1 at SOTI Inc. • Gurgaon, India</p>
               <p className="text-blue-100 text-xs sm:text-sm mt-2">Since July 2024</p>
             </motion.div>
           </motion.div>

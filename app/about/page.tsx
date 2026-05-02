@@ -7,7 +7,7 @@ import { buildPageMetadata } from '../lib/seo'
 export const metadata: Metadata = buildPageMetadata({
   title: 'About | Frontend Developer',
   description:
-    'Learn about Thulunga Basumatary, a Software Developer I focused on Angular, TypeScript, enterprise frontend systems, and scalable product engineering.',
+    'Learn about Thulunga Basumatary, a Software Developer 1 focused on Angular, TypeScript, enterprise frontend systems, and scalable product engineering.',
   path: '/about',
   keywords: ['about frontend developer', 'software engineer profile', 'angular developer background'],
 })

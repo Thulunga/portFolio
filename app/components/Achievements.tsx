@@ -15,7 +15,7 @@ export function Achievements() {
     {
       icon: '📈',
       title: 'Promoted Ahead of Cycle',
-      detail: 'Associate Developer to Software Developer I',
+      detail: 'Associate Developer to Software Developer 1',
       description: 'Promoted ahead of the standard cycle at SOTI Inc., reflecting consistent high performance and expanded ownership of component architecture.',
       color: 'from-green-400 to-emerald-500',
     },

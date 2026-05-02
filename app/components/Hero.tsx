@@ -53,7 +53,7 @@ export function Hero() {
 
             <motion.div variants={itemVariants}>
               <h2 className="text-lg sm:text-xl md:text-2xl text-blue-600 dark:text-blue-400 font-semibold leading-snug">
-                Software Developer I | Angular & TypeScript Specialist
+                Software Developer 1 | Angular & TypeScript Specialist
               </h2>
             </motion.div>
 
