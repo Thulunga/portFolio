@@ -193,7 +193,7 @@ export function Achievements() {
           className="mt-8 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6"
         >
           {[
-            { value: '3+', label: 'Years at SOTI' },
+            { value: '4+', label: 'Years at SOTI' },
             { value: '2x', label: 'MVP Nominee' },
             { value: '10+', label: 'UI Components Shipped' },
             { value: 'NIT', label: 'Calicut Graduate' },
