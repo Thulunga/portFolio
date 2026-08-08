@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export function About() {
   const stats = [
-    { number: '3+', label: 'Years Experience', icon: '📅' },
+    { number: '4+', label: 'Years Experience', icon: '📅' },
     { number: '2x', label: 'MVP Nominee', icon: '🏆' },
     { number: '17K+', label: 'SOTI Customers', icon: '👥' },
   ]
@@ -37,7 +37,7 @@ export function About() {
             className="space-y-4 sm:space-y-6"
           >
             <p className="text-sm sm:text-base md:text-lg text-dark-600 dark:text-dark-300 leading-relaxed">
-              Results-driven Software Developer with <strong>3+ years</strong> building enterprise-grade Angular and TypeScript applications at <strong>SOTI Inc.</strong>, a global MDM/EMM leader serving 17,000+ customers worldwide.
+              Results-driven Software Developer with <strong>4+ years</strong> building enterprise-grade Angular and TypeScript applications at <strong>SOTI Inc.</strong>, a global MDM/EMM leader serving 17,000+ customers worldwide.
             </p>
 
             <p className="text-sm sm:text-base md:text-lg text-dark-600 dark:text-dark-300 leading-relaxed">
