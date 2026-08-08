@@ -7,9 +7,9 @@ import { buildPageMetadata } from '../lib/seo'
 export const metadata: Metadata = buildPageMetadata({
   title: 'Projects | Software Developer Portfolio',
   description:
-    'Explore featured software projects by Thulunga Basumatary including full-stack Next.js platforms and enterprise Angular packages.',
+    'Explore featured software projects by Thulunga Basumatary including full-stack Next.js platforms, AG-UI-inspired agentic troubleshooting chat, and enterprise Angular packages.',
   path: '/projects',
-  keywords: ['developer projects', 'next.js projects', 'angular project portfolio', 'full stack portfolio'],
+  keywords: ['developer projects', 'next.js projects', 'angular project portfolio', 'full stack portfolio', 'AG-UI chat', 'agentic troubleshooting UI'],
 })
 
 export default function ProjectsPage() {

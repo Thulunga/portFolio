@@ -5,16 +5,27 @@ import { motion } from 'framer-motion'
 export function Experience() {
   const experiences = [
     {
+      title: 'Software Developer 2',
+      company: 'SOTI Inc.',
+      location: 'Gurgaon, India',
+      period: 'August 2026 - Present',
+      highlights: [
+        'Building AG-UI-inspired agentic troubleshooting chat that streams lifecycle, text, tool-call, and state updates into the UI step by step',
+        'Designing human-in-the-loop interaction patterns for approvals, clarifying questions, and safe intervention during troubleshooting workflows',
+        'Coordinating frontend diagnostics with backend troubleshooting tools in an event-driven Angular experience',
+      ],
+    },
+    {
       title: 'Software Developer 1',
       company: 'SOTI Inc.',
       location: 'Gurgaon, India',
-      period: 'July 2024 - Present',
+      period: 'July 2024 - August 2026',
       highlights: [
         'Architected and shipped a reusable AI-powered chatbot Angular package deployed across multiple SOTI products',
         'Engineered frontend performance for screens rendering 5,000+ records using virtual scrolling and OnPush change detection',
         'Designed scalable Angular module architecture with RxJS-based state management',
         'Cross-functional frontend lead bridging Product, Design, and Backend - delivering WCAG-compliant interfaces on schedule',
-        'Contributed to SDE-1 technical interviews - shaping hiring standards beyond individual contributor scope',
+        'Contributed to technical interviews - shaping hiring standards beyond individual contributor scope',
         'MVP Nominee 2x Consecutive (2024 and 2025)',
       ],
     },

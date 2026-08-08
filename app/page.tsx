@@ -18,7 +18,7 @@ const Contact = dynamic(() => import('./components/Contact').then((module) => mo
 export const metadata: Metadata = buildPageMetadata({
   title: 'Software Developer Portfolio',
   description:
-    'Software developer portfolio of Thulunga Basumatary featuring Angular, TypeScript, React, enterprise frontend architecture, and full-stack project work.',
+    'Software developer portfolio of Thulunga Basumatary featuring Angular, TypeScript, React, enterprise frontend architecture, AG-UI-inspired agentic troubleshooting chat, and full-stack project work.',
   path: '/',
   keywords: [
     'software developer portfolio',
@@ -26,6 +26,8 @@ export const metadata: Metadata = buildPageMetadata({
     'frontend developer portfolio',
     'typescript engineer portfolio',
     'full stack developer projects',
+    'AG-UI agentic chat',
+    'human in the loop troubleshooting',
   ],
 })
 

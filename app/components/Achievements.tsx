@@ -13,17 +13,24 @@ export function Achievements() {
       color: 'from-amber-400 to-orange-500',
     },
     {
+      icon: '🚀',
+      title: 'Promoted to Software Developer 2',
+      detail: 'Current role at SOTI Inc.',
+      description: 'Advanced into Software Developer 2, reflecting sustained product impact, technical ownership, and cross-functional frontend leadership.',
+      color: 'from-green-400 to-emerald-500',
+    },
+    {
       icon: '📈',
       title: 'Promoted Ahead of Cycle',
       detail: 'Associate Developer to Software Developer 1',
       description: 'Promoted ahead of the standard cycle at SOTI Inc., reflecting consistent high performance and expanded ownership of component architecture.',
-      color: 'from-green-400 to-emerald-500',
+      color: 'from-emerald-400 to-teal-500',
     },
     {
       icon: '🎤',
-      title: 'SDE-1 Technical Interviewer',
+      title: 'SDE Technical Interviewer',
       detail: 'SOTI Inc.',
-      description: 'Contributed to technical hiring for SDE-1 roles at SOTI Inc. - shaping team hiring standards beyond individual contributor scope.',
+      description: 'Contributed to technical hiring for software developer roles at SOTI Inc. - shaping team hiring standards beyond individual contributor scope.',
       color: 'from-blue-400 to-indigo-500',
     },
     {

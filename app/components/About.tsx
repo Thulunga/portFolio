@@ -41,7 +41,7 @@ export function About() {
             </p>
 
             <p className="text-sm sm:text-base md:text-lg text-dark-600 dark:text-dark-300 leading-relaxed">
-              Architected a <strong>reusable AI-powered chatbot UI package</strong> deployed across multiple products. Engineered performance solutions for <strong>5,000+ record data views</strong>. <strong>MVP Nominee two consecutive years</strong> (2024 and 2025).
+              Building an <strong>AG-UI-inspired agentic troubleshooting chat</strong> where frontend and backend tools stream step-by-step events into the UI with <strong>human-in-the-loop</strong> controls. Engineered performance solutions for <strong>5,000+ record data views</strong>. <strong>MVP Nominee two consecutive years</strong> (2024 and 2025).
             </p>
 
             <p className="text-sm sm:text-base md:text-lg text-dark-600 dark:text-dark-300 leading-relaxed">
@@ -105,8 +105,8 @@ export function About() {
               className="bg-gradient-to-br from-blue-500 to-purple-600 p-4 sm:p-6 rounded-xl text-white"
             >
               <h3 className="font-bold text-base sm:text-lg mb-2">Current Role</h3>
-              <p className="text-blue-100 text-sm sm:text-base">Software Developer 1 at SOTI Inc. • Gurgaon, India</p>
-              <p className="text-blue-100 text-xs sm:text-sm mt-2">Since July 2024</p>
+              <p className="text-blue-100 text-sm sm:text-base">Software Developer 2 at SOTI Inc. • Gurgaon, India</p>
+              <p className="text-blue-100 text-xs sm:text-sm mt-2">Since August 2026</p>
             </motion.div>
           </motion.div>
         </div>

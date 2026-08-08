@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const siteConfig = {
   siteName: 'Thulunga Basumatary Portfolio',
   author: 'Thulunga Basumatary',
-  role: 'Software Developer 1',
+  role: 'Software Developer 2',
   siteUrl: 'https://thulunga.vercel.app',
   location: 'Gurgaon, India',
   email: 'thulunga.tb@gmail.com',
@@ -130,12 +130,12 @@ export const faqItems = [
   {
     question: 'Who is Thulunga Basumatary?',
     answer:
-      'Thulunga Basumatary is a Software Developer 1 at SOTI Inc. specializing in Angular, TypeScript, and enterprise frontend architecture.',
+      'Thulunga Basumatary is a Software Developer 2 at SOTI Inc. specializing in Angular, TypeScript, AG-UI-inspired agentic chat, and enterprise frontend architecture.',
   },
   {
     question: 'What technologies does this frontend developer use?',
     answer:
-      'The primary stack includes Angular, TypeScript, RxJS, Next.js, React, PostgreSQL, Supabase, and modern CI/CD deployment workflows.',
+      'The primary stack includes Angular, TypeScript, RxJS, AG-UI-style event streams, Next.js, React, PostgreSQL, Supabase, and modern CI/CD deployment workflows.',
   },
   {
     question: 'Is Thulunga available for software developer roles?',
